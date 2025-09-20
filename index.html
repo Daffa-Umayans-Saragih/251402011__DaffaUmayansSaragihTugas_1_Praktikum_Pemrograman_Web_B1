@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <form>
+      <tbody>
+        <h2>Form Pemesanan Tiket</h2>
+        <tr>
+          <td>
+            <label for="Nama">Nama:</label>
+          </td>
+          <td>
+            <input type="text" id="Nama" name="Nama" placeholder ="Masukkan Nama" required >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for ="Email">Email:</label>
+          </td>
+          <td>
+            <input type="Email" id="Email" name="Email" placeholder ="Contoh:example@gmail.com" required >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="NomorHP">Nomor HP:</label>
+          </td>
+          <td>
+            <input type="tel" id="NomorHP" name="NomorHP" pattern="[0-9]{10,13}" placeholder ="Contoh: 081245681256" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Destinasi">Destinasi:</label>
+          </td> 
+          <td>
+            <select id="Destinasi" name="Destinasi" required>
+              <option value="Padang">Padang</option>
+              <option value="Aek Loba">Aek Loba</option>
+              <option value="Pematang Siantar">Pematang Siantar</option>
+              <option value="Prapat">Prapat</option>
+              <option value="Pekanbaru">Pekanbaru</option>
+              <option value="Banda Aceh">Banda Aceh</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <tabel for="Tanggal Berangkat">Tanggal Berangkat:</tabel>
+          </td>
+          <td>
+            <input type="date" id="Tanggal Berangkat" name="Tanggal Berangkat" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Waktu Berangkat">Waktu Berangkat:</label>
+          </td>
+          <td>
+            <input type="time" id="Baktu Werangkat" name="Waktu Berangkat" required >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Jumlah Penumpang" >Jumlah Penumpang:</label>
+          </td>
+          <td>
+            <input type="number" id="Jumlah Penumpang" name="Jumlah Penumpang" placeholder ="Masukkan Jumlah Penumpang" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Pilihan Armada">Pilihan Armada:</label>
+          </td>
+          <td >
+            <input type="radio" id="Mobil Hiace" name="Pilihan Armada" value="Mobil Hiace" required>Mobil Hiace
+            <br>
+            <input type="radio" id="Bus Laksana" name="Pilihan Armada" value="Bus Laksana" required>Bus Laksana
+            <br>
+            <input type="radio" id="ELF" name="Pilihan Armada" value="ELF" required>ELF
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Layanan Tambahan">Layanan Tambahan:</label>
+          </td>
+          <td>
+            <input type="checkbox" id="Makanan" name="Layanan Tambahan" value="Makanan">Makanan
+            <br>
+            <input type="checkbox" id="Makanan" name="Layanan Tambahan" value="Air Mineral">Air Mineral
+            <br>
+            <input type="checkbox" id="Makanan" name="Layanan Tambahan" value="Selimut">Selimut
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Upload KTP">Upload KTP:</label>
+          </td>
+          <td>
+            <input type="file" id="KTP" name="KTP" required >
+        </tr>
+        <tr>
+          <td colspan="4">
+            <button type="submit">KONFIRMASI PESANAN</button> 
+            <button type="reset">RESET DATA</button>
+          </td>
+        </tr>
+      </tbody>
+    </form>
+  </table>
+</body>
+</html>
